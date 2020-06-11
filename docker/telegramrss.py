@@ -125,7 +125,7 @@ def rss_monitor(bot, job):
 
 
 def cmd_test(bot, update, args):
-    url = "https://www.reddit.com/r/funny/.rss"
+    url = "https://rss.app/feeds/1dBIkQdyINVlLWCu.xml"
     rss_d = feedparser.parse(url)
     rss_d.entries[0]['link']
     bot.send_message(chat_id=chatid, text=(rss_d.entries[0]['link']))
